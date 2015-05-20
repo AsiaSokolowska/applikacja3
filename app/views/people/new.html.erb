@@ -1,0 +1,9 @@
+<h1>New Person</h1>
+<%= simple_form_for @person do |p| %>
+<%= p.input :first_name %>
+<%= p.input :last_name %>
+<%= p.input :phone%>
+<%= p.input :email%>
+<%= p.button :submit%>
+<%end%>
+

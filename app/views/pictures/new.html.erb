@@ -1,0 +1,10 @@
+<h1> Add new picture! </h1>
+
+
+<%= form_tag(pictures_path, multipart: true) do %>
+
+  <p><%= label_tag :picture, 'Picture' %></p>
+  <p><%= file_field_tag :picture %></p>
+  </br><%= submit_tag('Upload') %><br/>
+
+<% end %>

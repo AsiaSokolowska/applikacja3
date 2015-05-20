@@ -1,0 +1,7 @@
+<h3>Hello</h3>
+
+<%= form_tag('/search', method: :get) do %>
+<%= label_tag :q, 'search' %>
+<%= text_field_tag :q %>
+<%= submit_tag('Search') %>
+<% end %>

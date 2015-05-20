@@ -1,0 +1,22 @@
+<%= form.input :title %>
+<%= form.association :categories, as: :check_boxes%>
+<%= form.input :body %>
+<%= form.button :submit %>
+
+
+<!-- <p>
+<%= form.label :category_id, 'Category' %></p>
+<%= form.collection_check_boxes :category_ids, Category.all, :id, :name %>
+
+
+<p>
+<%= form.label :title, 'Title' %>
+  <%= form.text_field :title %>
+  </p>
+
+  <p>
+  <%=form.label :body, 'Body' %>
+  <%= form.text_area :body %>
+  </p>
+
+  <p><%= form.submit %></p> -->

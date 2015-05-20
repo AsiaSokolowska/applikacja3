@@ -1,0 +1,2 @@
+module LogeventHelper
+end

@@ -1,0 +1,9 @@
+<h1>LOG EVENTS</h1>
+
+<% @logevents.each do |e| %>
+<%= e.user_id %>
+<%= e.target_id %>
+<%= e.target_type %>
+<%= e.action %></br>
+
+<% end %>

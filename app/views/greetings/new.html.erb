@@ -1,0 +1,24 @@
+Hello
+
+<%= form_tag(greetings_path) do %>
+<%= label_tag :f, 'first_name' %><br/>
+<%= text_field_tag :f %><br/>
+<%= label_tag :l, 'last_name' %><br/>
+<%= text_field_tag(:l, value = "", {placeholder: "text"}) %><br/>
+</br><%= password_field_tag :secret%><br/>
+</br><%= date_field_tag :birthday %><br/>
+<%= label_tag :birthday, 'Day of birth' %><br/>
+
+</br>
+<%= radio_button_tag(:operation, 'upcase') %>
+<%= label_tag :operation, "upcase?" %>
+
+<%= radio_button_tag(:operation,'reverse') %>
+<%= label_tag :operation, "odwróc?" %>
+
+</br> <%= text_area_tag :description, '', cols: 100, rows: 10 %> <br/>
+
+</br>
+
+<%= submit_tag('KLIK') %><br/>
+<% end %>
